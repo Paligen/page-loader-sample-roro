@@ -1,4 +1,4 @@
-// Hide the loader and show the main content
+//Hide the loader and show the main content
 function hideLoader() {
   gsap.to(".loader", {
     opacity: 0,

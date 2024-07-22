@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f0f0;
 }
 
 .loader {
@@ -24,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f0f0;
+  background: rgb(240, 240, 240);
   z-index: 1000;
 }
 
@@ -32,14 +31,34 @@ body {
   font-size: 20vmax;
   font-weight: 400;
   display: inline-block;
-  color: #000000;
+  
+  /* Text color the glass effect */
+  /* color: #000; */
+  color: transparent;
+  
   transform: scale(0.5);
   opacity: 0;
+  
   /* Shadow for glass effect */
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
-  position: relative;
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5); */
+
+  /* Inner shadow effect */
+  text-shadow: 0.02rem 0.02rem 0.15rem rgba(240, 240, 240, 0.75),
+    0 0 rgb(88, 88, 88);
+  
+    position: relative;
   display: inline-block;
   padding: 10px;
+}
+
+.letter.r {
+  text-transform: uppercase;
+  /* animation: colorChange 2s infinite alternate; */
+}
+
+.letter.o {
+  text-transform: lowercase;
+  /* animation: colorChange 2s infinite alternate; */
 }
 
 .main-content {
@@ -59,3 +78,23 @@ body {
     opacity: 1;
   }
 }
+
+/* @keyframes colorChange {
+  0% {
+    color: rgb(228, 228, 228);
+  }
+  25% {
+    color: rgb(110, 70, 60);
+  }
+  50% {
+    color: rgb(60, 110, 70);
+  }
+
+  75%{
+    color: rgb(70, 60, 110);
+  }
+
+  100% {
+    color: rgb(237, 237, 237);
+  }
+} */
