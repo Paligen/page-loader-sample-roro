@@ -31,34 +31,39 @@ body {
   font-size: 20vmax;
   font-weight: 400;
   display: inline-block;
-  
+
   /* Text color the glass effect */
-  /* color: #000; */
-  color: transparent;
-  
+  color: #000;
+
+  /* Text for the inner shadow effect */
+  /* color: transparent; */
+
   transform: scale(0.5);
   opacity: 0;
-  
+
   /* Shadow for glass effect */
-  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5); */
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.5);
 
   /* Inner shadow effect */
-  text-shadow: 0.02rem 0.02rem 0.15rem rgba(240, 240, 240, 0.75),
-    0 0 rgb(88, 88, 88);
-  
-    position: relative;
+  /* text-shadow: 0.02rem 0.02rem 0.2rem rgba(255, 255, 255, 0.744), 0 0 rgb(0, 0, 0); */
+
+  position: relative;
   display: inline-block;
   padding: 10px;
 }
 
 .letter.r {
   text-transform: uppercase;
-  /* animation: colorChange 2s infinite alternate; */
+  animation: colorChange 2s infinite alternate;
 }
 
 .letter.o {
   text-transform: lowercase;
-  /* animation: colorChange 2s infinite alternate; */
+  animation: colorChange 2s infinite alternate;
+}
+
+.message {
+  display: none;
 }
 
 .main-content {
@@ -73,6 +78,7 @@ body {
     transform: scale(0.5);
     opacity: 0;
   }
+
   50% {
     transform: scale(1.2);
     opacity: 1;
@@ -81,20 +87,20 @@ body {
 
 /* @keyframes colorChange {
   0% {
-    color: rgb(228, 228, 228);
+    color: #61A0AF80;
   }
   25% {
-    color: rgb(110, 70, 60);
+    color: #96C9DC80;
   }
   50% {
-    color: rgb(60, 110, 70);
+    color: #f06c9b80;
   }
 
-  75%{
-    color: rgb(70, 60, 110);
+  75% {
+    color: #F9B9B780;
   }
 
   100% {
-    color: rgb(237, 237, 237);
+    color: #F5D49180;
   }
 } */
