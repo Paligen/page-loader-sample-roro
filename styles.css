@@ -33,19 +33,17 @@ body {
   display: inline-block;
 
   /* Text color the glass effect */
-  color: #000;
-
-  /* Text for the inner shadow effect */
-  /* color: transparent; */
+  /* color: #000; */
+  color: transparent;
 
   transform: scale(0.5);
   opacity: 0;
 
   /* Shadow for glass effect */
-  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.5);
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5); */
 
   /* Inner shadow effect */
-  /* text-shadow: 0.02rem 0.02rem 0.2rem rgba(255, 255, 255, 0.744), 0 0 rgb(0, 0, 0); */
+  text-shadow: 0.02rem 0.02rem 0.2rem rgba(255, 255, 255, 0.744), 0 0 rgb(0, 0, 0);
 
   position: relative;
   display: inline-block;
@@ -62,10 +60,6 @@ body {
   animation: colorChange 2s infinite alternate;
 }
 
-.message {
-  display: none;
-}
-
 .main-content {
   display: none;
   /* text-align: center; */
@@ -78,14 +72,13 @@ body {
     transform: scale(0.5);
     opacity: 0;
   }
-
   50% {
     transform: scale(1.2);
     opacity: 1;
   }
 }
 
-/* @keyframes colorChange {
+@keyframes colorChange {
   0% {
     color: #61A0AF80;
   }
@@ -103,4 +96,4 @@ body {
   100% {
     color: #F5D49180;
   }
-} */
+}
